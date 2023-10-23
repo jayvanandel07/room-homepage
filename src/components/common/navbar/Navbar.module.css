@@ -4,10 +4,9 @@ nav {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  padding-block: 3rem;
-  padding-inline: 1.5rem;
-
+  padding-block: 3.5rem;
   font-size: 1.2em;
+  z-index: 10;
 }
 nav img {
   cursor: pointer;

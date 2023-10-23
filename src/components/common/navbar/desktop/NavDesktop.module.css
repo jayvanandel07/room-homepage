@@ -1,9 +1,9 @@
-img[alt="logo"] {
+nav > img[alt="logo"] {
   padding: 0.5rem;
   margin: 0;
 }
 
-ul {
+nav ul {
   display: flex;
   gap: 3rem;
   list-style: none;
@@ -13,6 +13,6 @@ ul {
   margin-left: 4rem;
   color: var(--neutral-clr-100);
 }
-li {
+nav ul li {
   font-weight: 600;
 }
