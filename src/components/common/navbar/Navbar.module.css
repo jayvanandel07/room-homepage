@@ -1,0 +1,10 @@
+nav {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-block: 4rem;
+  padding-inline: 1.5rem;
+  background: var(--neutral-clr-0);
+  font-size: 1.2em;
+}
