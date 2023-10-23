@@ -1,10 +1,25 @@
 nav {
-  position: relative;
+  position: fixed;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  padding-block: 4rem;
+  padding-block: 3rem;
   padding-inline: 1.5rem;
-  background: var(--neutral-clr-0);
+
   font-size: 1.2em;
+}
+nav img {
+  cursor: pointer;
+  padding: 0.5rem;
+}
+nav ul > li {
+  cursor: pointer;
+}
+
+@media (min-width: 1280px) {
+  nav {
+    padding-block: 2rem;
+    padding-inline: 1.5rem;
+  }
 }

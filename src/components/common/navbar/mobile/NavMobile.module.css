@@ -1,6 +1,3 @@
-img {
-  cursor: pointer;
-}
 img[alt="burgerIcon"] {
   bottom: 0;
   left: 0;
@@ -8,7 +5,7 @@ img[alt="burgerIcon"] {
   position: absolute;
   top: 0;
 }
-img[alt="logo"] {
+img[alt="logo"].mobile {
   --fade-duration: 0.2s;
   margin-inline: auto;
 }
@@ -19,6 +16,7 @@ img[alt="logo"] {
   animation: LogoFadeIn var(--fade-duration) linear forwards;
 }
 .menu {
+  --animation-duration: 0.2s;
   align-items: center;
   background: var(--neutral-clr-100);
   box-sizing: border-box;
@@ -35,7 +33,7 @@ img[alt="logo"] {
 img[alt="close icon"] {
   width: 1em;
 }
-ul {
+.menu > ul {
   display: flex;
   gap: 3rem;
   list-style: none;
@@ -43,14 +41,14 @@ ul {
   padding: 0;
   width: fit-content;
 }
-li {
+.menu > ul > li {
   font-weight: 600;
 }
 .menu.open {
-  animation: MenuIn 0.2s linear forwards;
+  animation: MenuIn var(--animation-duration) ease-in forwards;
 }
 .menu.close {
-  animation: MenuOut 0.2s linear forwards;
+  animation: MenuOut var(--animation-duration) ease-out forwards;
 }
 
 @keyframes LogoFadeOut {

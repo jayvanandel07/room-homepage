@@ -19,7 +19,9 @@ function NavMobile() {
       <img
         src={logo}
         alt="logo"
-        className={`${menuOpen ? styles.logoFadeOut : styles.logoFadeIn}`}
+        className={`${styles.mobile} ${
+          menuOpen ? styles.logoFadeOut : styles.logoFadeIn
+        }`}
       />
       <div
         className={`${styles.menu} ${menuOpen ? styles.open : styles.close}`}
