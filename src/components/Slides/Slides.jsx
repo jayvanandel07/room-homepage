@@ -5,6 +5,7 @@ import useScreenWidth from "../../hooks/useScreenWidth";
 
 import arrowLeft from "../../../public/images/icon-angle-left.svg";
 import arrowRight from "../../../public/images/icon-angle-right.svg";
+import arrowIcon from "../../../public/images/icon-arrow.svg";
 
 function Slides() {
   const screenWidth = useScreenWidth();
@@ -88,12 +89,15 @@ function Slides() {
             </div>
           )}
           <div className={`${styles.title}`}>
-            {HomePageData.slidesData[0].title}
+            {HomePageData.slidesData[slide].title}
           </div>
           <div className={`${styles.description}`}>
-            {HomePageData.slidesData[0].description}
+            {HomePageData.slidesData[slide].description}
           </div>
-          <div className={`${styles.shopNow}`}></div>
+          <div className={`${styles.shopNow}`}>
+            SHOP NOW
+            <img src={arrowIcon} alt="arrow icon" />
+          </div>
         </div>
       </div>
       <div className={`${styles.aboutContainer}`}>
