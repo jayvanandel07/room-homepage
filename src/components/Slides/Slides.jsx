@@ -96,6 +96,22 @@ function Slides() {
           <div className={`${styles.shopNow}`}></div>
         </div>
       </div>
+      <div className={`${styles.aboutContainer}`}>
+        <span>
+          <img src={HomePageData.aboutData.images[0]} alt="about image" />
+        </span>
+        <span>
+          <div className={`${styles.title}`}>
+            {HomePageData.aboutData.title}
+          </div>
+          <div className={`${styles.description}`}>
+            {HomePageData.aboutData.description}
+          </div>
+        </span>
+        <span>
+          <img src={HomePageData.aboutData.images[1]} alt="about image" />
+        </span>
+      </div>
     </>
   );
 }

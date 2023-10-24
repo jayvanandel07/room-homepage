@@ -18,7 +18,7 @@ nav ul > li {
 
 @media (min-width: 1280px) {
   nav {
-    padding-block: 2rem;
-    padding-inline: 1.5rem;
+    padding-block: 4rem;
+    padding-inline: 3rem;
   }
 }
